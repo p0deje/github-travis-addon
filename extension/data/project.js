@@ -4,7 +4,7 @@ var addNewProject = function(){
   var tr = document.createElement('tr');
   var td1 = document.createElement('td');
   var td2 = document.createElement('td');
-  var project = projectUrl.value.split('/').splice(3,4).join('/');
+  var project = projectUrl.value.split('/').splice(3,4).join('/').replace(/\/\//, '/');
   var img = document.createElement('img');
   var text = document.createTextNode(project);
 
